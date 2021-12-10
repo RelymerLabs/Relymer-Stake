@@ -1,0 +1,16 @@
+.App {
+  position: relative;
+
+  background-position: center;
+  background-size:cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #232028;
+
+}
+body{
+  background-color: #232028;
+
+}
