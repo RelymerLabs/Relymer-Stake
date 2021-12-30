@@ -62,9 +62,9 @@ export default function Header() {
   return (
     <Grid container justify='center' classes={{ container: classes.container }}>
       <a href="#" target="_BLANK">
-        <img src={logo} alt='snoopyDoge' className={classes.logo} /> 
+        <img src={logo} alt='Kikswap' className={classes.logo} /> 
       </a>
-      <strong className={classes.title}> SNOOPY DOGE</strong>
+      <strong className={classes.title}>Kikswap</strong>
       {connected ? (
         <>
           <WalletInfo className={classes.walletInfo} />

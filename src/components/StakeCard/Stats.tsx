@@ -69,15 +69,15 @@ export default function Stats({ token }: { token: TokenEnum }) {
         <Typography variant='body1' classes={{ root: classes.apy }}>
           {
             Token.JIT == "KIK" && apy
-              // ? `${formatNumber(apy / 365)} %`
-              ? `465 %`
+              ? `${formatNumber(apy / 365)} %`
+              // ? `465 %`
               : token == Token.JIT_DOGE
                 ? "493%"
                 : token == Token.JIT_SHIB
                   ? '294%'
                   : token == Token.JIT_AKITA
                     ? '432%'
-                    : '-'
+                    : '465 %'
           }
         </Typography>
       </div>
@@ -92,15 +92,15 @@ export default function Stats({ token }: { token: TokenEnum }) {
         <Typography variant='body1' classes={{ root: classes.apy }}>
           {
             Token.JIT == "KIK" && apy
-              // ? `${formatNumber(apy / 365)} %`
-              ? `110,244.30 %`
+              ? `${formatNumber(apy / 365)} %`
+              // ? `110,244.30 %`
               : token == Token.JIT_DOGE
                 ? "179,945%"
                 : token == Token.JIT_SHIB
                   ? '107,310%'
                   : token == Token.JIT_AKITA
                     ? '157,680%'
-                    : '-'
+                    : '110,244.30 %'
           }
         </Typography>
       </div>
@@ -123,8 +123,8 @@ export default function Stats({ token }: { token: TokenEnum }) {
                   ? '0'
                   : token == Token.JIT_AKITA
                     ? '0'
-                  : '-'
-            // : `${getFullDisplayBalance(total)}`
+                  // : '-'
+            : `${getFullDisplayBalance(total)}`
           }
         </Typography>
       </div>
