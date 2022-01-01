@@ -20,7 +20,7 @@ export default function Pending({
       <Box>
         <Typography variant='h6' display='block'>
           This pool will go live after <br />
-          Spot Trading launch which is<br />
+          Presale/Spot Trading launch<br />
          
         </Typography>
       </Box>

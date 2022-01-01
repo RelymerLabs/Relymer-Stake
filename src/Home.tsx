@@ -43,6 +43,7 @@ const cards: StakeCardProps[] = [
     token: Token.JIT_DOGE,
     bg: bnbBg,
     color: "#ef5350",
+    open: false,
     cardTitle: (
       <>
         <img src="friends/doge.png" style={{ width: "23px", marginBottom: "-4px", marginRight: "8px" }} />
@@ -60,6 +61,7 @@ const cards: StakeCardProps[] = [
     token: Token.JIT_SHIB,
     bg: bnbBg,
     color: "#ef5350",
+    open: false,
     cardTitle: (
       <>
         <img src="friends/shib-inu.png" style={{ width: "23px", marginBottom: "-4px", marginRight: "8px" }} />
@@ -77,6 +79,7 @@ const cards: StakeCardProps[] = [
     token: Token.JIT_AKITA,
     bg: bnbBg,
     color: "#ef5350",
+    open: false,
     cardTitle: (
       <>
         <img src="friends/akita-inu.png" style={{ width: "23px", marginBottom: "-4px", marginRight: "8px" }} />
