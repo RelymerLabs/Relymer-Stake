@@ -26,7 +26,7 @@ const useStyles = makeStyles(({ palette }) => ({
   root: {
     ...cardContent,
     minHeight: 54,
-    background: "#f06500",
+    background: "#4CAF50ae",
 
   },
   amountBox: {
@@ -59,6 +59,8 @@ const AmountLabel = withStyles({
     fontWeight: 900,
     letterSpacing: "1px",
     textTransform: "uppercase",
+    fontFamily: "Roboto",
+
     color: "#fff"
   },
 })(Typography);
@@ -85,7 +87,7 @@ const InputButton = withStyles(({ palette }) => ({
     "&:hover": {
       boxShadow: "none",
       color: '#fff',
-      background: 'linear-gradient(270deg, #f28b03 0%, #f06500 100%)',
+      background: '#4CAF50',
     },
   },
 }))(Button);

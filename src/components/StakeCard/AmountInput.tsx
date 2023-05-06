@@ -28,6 +28,7 @@ const useStyles = makeStyles(({ palette }) => ({
   },
   logo: {
     height: 22,
+    
     marginRight: 8,
   },
   input: {
@@ -52,7 +53,10 @@ const useStyles = makeStyles(({ palette }) => ({
   maxLabel: {
     fontSize: 10,
     fontWeight: 700,
+    fontFamily: "Padauk",
+
     color: "#fff"
+    
   },
 }));
 

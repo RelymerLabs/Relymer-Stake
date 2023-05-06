@@ -37,15 +37,15 @@ export const useTokenAllowance = (token: TokenEnum, spenderAddress: string) => {
       //   return phbContract;
       case Token.JIT:
         return JITContract;
-      case Token.JIT_DOGE:
+      case Token.JIT_PEPE:
         return lpContract;
-      case Token.JIT_SHIB:
+      case Token.JIT_BOB:
         return lpContractPswapBnb;
-      case Token.JIT_AKITA:
+      case Token.JIT_WOJAK:
         return lpContractPswapBusd;
-      // case Token.JIT_DOGE_DEPRECATED:
+      // case Token.JIT_PEPE_DEPRECATED:
       //   return deprecatedLpContract;
-      // case Token.JIT_DOGE_LEGACY:
+      // case Token.JIT_PEPE_LEGACY:
       //   return legacyLpContract;
       default:
         break;

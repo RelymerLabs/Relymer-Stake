@@ -1,3 +1,5 @@
+/** @format */
+
 import { useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import useRequest from "@ahooksjs/use-request";
@@ -28,68 +30,85 @@ const cards: StakeCardProps[] = [
     color: "#ef5350",
     cardTitle: (
       <>
-        <img src="friends/logo.png" style={{ width: "23px", marginBottom: "-4px", marginRight: "8px" }} />
-        KIK ~ KIK
+        <img
+          src='friends/logo.png'
+          alt=''
+          style={{ width: "23px", marginBottom: "-4px", marginRight: "8px" }}
+        />
+        PEPES ~ PEPES
       </>
     ),
     desc: (
       <>
-        Stake KIK to earn KIK. <br />
-        Simplest way to get more KIK with amazing returns is to just stake them in this pool!
+        Stake PEPES to earn PEPES. <br />
+        Simplest way to get more PEPES with amazing returns is to just stake
+        them in this pool!
       </>
     ),
   },
   {
-    token: Token.JIT_DOGE,
+    token: Token.JIT_PEPE,
     bg: bnbBg,
     color: "#ef5350",
-    open: false,
+    // open: false,
     cardTitle: (
       <>
-        <img src="friends/doge.png" style={{ width: "23px", marginBottom: "-4px", marginRight: "8px" }} />
-        KIK ~ Doge
+        <img
+          src='friends/PEPE.png'
+          style={{ width: "23px", marginBottom: "-4px", marginRight: "8px" }}
+        />
+        PEPES ~ PEPE
       </>
     ),
     desc: (
       <>
-        Stake KIK to earn DOGE. <br />
-        Wan't to earn DOGE? Just buy KIK and stake in this pool with amazing returns!
+        Stake PEPES to earn PEPE. <br />
+        Wan't to earn PEPE? Just buy PEPES and stake in this pool with amazing
+        returns!
       </>
     ),
   },
   {
-    token: Token.JIT_SHIB,
+    token: Token.JIT_BOB,
     bg: bnbBg,
     color: "#ef5350",
-    open: false,
+    // open: false,
     cardTitle: (
       <>
-        <img src="friends/shib-inu.png" style={{ width: "23px", marginBottom: "-4px", marginRight: "8px" }} />
-        KIK ~ SHIBA INU
+        <img
+          src='friends/BOB.png'
+          style={{ width: "23px", marginBottom: "-4px", marginRight: "8px" }}
+        />
+        PEPES ~ BOB
       </>
     ),
     desc: (
       <>
-        Stake KIK to earn SHIB. <br />
-        Wan't to earn SHIB? Just buy KIK and stake in this pool with amazing returns!
+        Stake PEPES to earn BOB. <br />
+        Wan't to earn BOB? Just buy PEPES and stake in this pool with amazing
+        returns!
       </>
     ),
   },
   {
-    token: Token.JIT_AKITA,
+    token: Token.JIT_WOJAK,
     bg: bnbBg,
     color: "#ef5350",
-    open: false,
+    // open: false,
     cardTitle: (
       <>
-        <img src="friends/akita-inu.png" style={{ width: "23px", marginBottom: "-4px", marginRight: "8px" }} />
-        KIK ~ AKITA INU
+        <img
+          src='friends/WOJAK.png'
+          style={{ width: "23px", marginBottom: "-4px", marginRight: "8px" }}
+        />
+        PEPES ~ WOJAK
       </>
     ),
     desc: (
       <>
-        Stake KIK to earn AKITA. <br />
-        Wan't to earn AKITA? Just buy KIK and stake in this pool with amazing returns!
+        Stake PEPES to earn WOJAK. <br />
+        Wan't to earn WOJAK? Just buy PEPES and stake in this pool with amazing
+        returns!
       </>
     ),
   },
@@ -130,7 +149,7 @@ export default function Home() {
 
   return (
     <div className={classes.container}>
-      {cards.map((card) => (
+      {cards.map(card => (
         <StakeCard key={card.token} {...card} className={classes.card} />
       ))}
     </div>

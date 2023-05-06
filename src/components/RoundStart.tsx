@@ -25,21 +25,21 @@ const Times: {
     end?: Date;
   };
 } = {
-  // [Token.JIT_SHIB]: {
+  // [Token.JIT_BOB]: {
   //   start: new Date("2021-01-22T21:22:19Z"),
   //   end: new Date("2021-12-29T21:22:19Z"),
   // },
-  // [Token.JIT_AKITA]: {
+  // [Token.JIT_WOJAK]: {
   //   start: new Date("2021-03-22T21:22:19Z"),
   //   end: new Date("2021-03-29T21:22:19Z"),
   // },
   [Token.JIT]: {},
-  [Token.JIT_DOGE]: {},
-  [Token.JIT_SHIB]: {},
-  [Token.JIT_AKITA]: {},
-  // [Token.JIT_SHIB]: {},
-  // [Token.JIT_DOGE_DEPRECATED]: {},
-  // [Token.JIT_DOGE_LEGACY]: {},
+  [Token.JIT_PEPE]: {},
+  [Token.JIT_BOB]: {},
+  [Token.JIT_WOJAK]: {},
+  // [Token.JIT_BOB]: {},
+  // [Token.JIT_PEPE_DEPRECATED]: {},
+  // [Token.JIT_PEPE_LEGACY]: {},
 };
 
 const padZero = (num: number) => num.toString().padStart(2, "0");

@@ -22,7 +22,8 @@ const useStyles = makeStyles({
   },
   label: {
     fontSize: 14,
-    color: "#f28b03",
+    color: "#ddf1b5",
+    fontFamily:"Architects Daughter",
     fontWeight: 600
   },
   apy: {
@@ -68,14 +69,14 @@ export default function Stats({ token }: { token: TokenEnum }) {
         </Typography>
         <Typography variant='body1' classes={{ root: classes.apy }}>
           {
-            Token.JIT == "KIK" && apy
+            Token.JIT == "PEPES" && apy
               ? `${formatNumber(apy / 365)} %`
               // ? `465 %`
-              : token == Token.JIT_DOGE
+              : token == Token.JIT_PEPE
                 ? "493 %"
-                : token == Token.JIT_SHIB
+                : token == Token.JIT_BOB
                   ? '294 %'
-                  : token == Token.JIT_AKITA
+                  : token == Token.JIT_WOJAK
                     ? '432 %'
                     : '465 %'
           }
@@ -91,14 +92,14 @@ export default function Stats({ token }: { token: TokenEnum }) {
         </Typography>
         <Typography variant='body1' classes={{ root: classes.apy }}>
           {
-            Token.JIT == "KIK" && apy
+            Token.JIT == "PEPES" && apy
               ? `${formatNumber(apy)} %`
               // ? `110,244.30 %`
-              : token == Token.JIT_DOGE
+              : token == Token.JIT_PEPE
                 ? "179,945 %"
-                : token == Token.JIT_SHIB
+                : token == Token.JIT_BOB
                   ? '107,310 %'
-                  : token == Token.JIT_AKITA
+                  : token == Token.JIT_WOJAK
                     ? '157,680 %'
                     : '110,244.30 %'
           }
@@ -115,14 +116,14 @@ export default function Stats({ token }: { token: TokenEnum }) {
         <Typography variant='body1' classes={{ root: classes.total }}>
           {/* {`${getFullDisplayBalance(total)}`} */}
           {
-            Token.JIT != "KIK"
+            Token.JIT != "PEPES"
               ? `${getFullDisplayBalance(total)}`
-              : token == Token.JIT_DOGE
-                ? "0"
-                : token == Token.JIT_SHIB
-                  ? '0'
-                  : token == Token.JIT_AKITA
-                    ? '0'
+              : token == Token.JIT_PEPE
+                ? "0.00 PEPE"
+                : token == Token.JIT_BOB
+                  ? '0.00 BOB'
+                  : token == Token.JIT_WOJAK
+                    ? '0.00 WOJAK'
                   // : '-'
             : `${getFullDisplayBalance(total)} ${TokenShortName[token]}`
           }

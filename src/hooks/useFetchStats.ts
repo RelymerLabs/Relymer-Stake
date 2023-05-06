@@ -52,11 +52,11 @@ export function useFetchStat(token: TokenEnum) {
 export default function useFetchStats() {
   // const phb = useFetchStat(Token.PHB);
   const JIT = useFetchStat(Token.JIT);
-  const lp = useFetchStat(Token.JIT_DOGE);
-  const lpContractPswapBnb = useFetchStat(Token.JIT_SHIB);
-  const lpContractPswapBusd = useFetchStat(Token.JIT_AKITA);
-  // const lpDeprecated = useFetchStat(Token.JIT_DOGE_DEPRECATED);
-  // const lpLegacy = useFetchStat(Token.JIT_DOGE_LEGACY);
+  const lp = useFetchStat(Token.JIT_PEPE);
+  const lpContractPswapBnb = useFetchStat(Token.JIT_BOB);
+  const lpContractPswapBusd = useFetchStat(Token.JIT_WOJAK);
+  // const lpDeprecated = useFetchStat(Token.JIT_PEPE_DEPRECATED);
+  // const lpLegacy = useFetchStat(Token.JIT_PEPE_LEGACY);
 
   // price
   const fetchPrice = useFetchPrice();

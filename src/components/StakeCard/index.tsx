@@ -25,6 +25,8 @@ const useStyles = makeStyles(() => ({
   desc: {
     color: "#fff",
     fontSize: "14px",
+    fontFamily: "Padauk",
+
     lineHeight: "22px",
     minHeight: 22 * 3,
   },
@@ -39,8 +41,8 @@ const StyledCard = withStyles(({ palette }) => ({
     backgroundRepeat: "no-repeat",
     backgroundSize: "auto 180px",
     backgroundPosition: "top -12px right -12px",
-    border: `2px solid #f28b03`,
-    boxShadow: "0px 8px #f28b03 !important"
+    border: `2px solid #4caf50`,
+    boxShadow: "0px 8px #4caf50 !important"
 
   },
 }))(Card);
@@ -48,15 +50,14 @@ const StyledCard = withStyles(({ palette }) => ({
 const StyledHeader = withStyles({
   root: {
     paddingTop: 32,
-    backgroundColor: "#232028",
+    backgroundColor: "#4CAF50ae",
     color: "#fff"
   },
   title: {
     marginBottom: 8,
-    fontFamily: "Roboto Condensed",
+    fontFamily: "Lemon",
     letterSpacing: "3px",
     textTransform: "uppercase",
-    fontWeight: 600,
     color: "#fff"
 
   },
@@ -65,7 +66,7 @@ const StyledHeader = withStyles({
 const StyledContent = withStyles(() => ({
   root: {
     padding: 0,
-    backgroundColor: "#232028",
+    backgroundColor: "#4A7133",
     color: "#fff"
 
   },
@@ -73,8 +74,8 @@ const StyledContent = withStyles(() => ({
 
 const StyledLinks = withStyles(({ palette }) => ({
   root: {
-    padding: 16,
-    backgroundColor: "#232028",
+    padding: 1,
+    backgroundColor: "#4CAF50ac",
     borderTop: `none`,
     color: "#fff"
 

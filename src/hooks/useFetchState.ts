@@ -37,28 +37,28 @@ export default function useFetchState() {
   // available atoms
   // const setAvailablePHB = useUpdateAtom(availableAtomFamily(Token.PHB));
   const setAvailableJIT = useUpdateAtom(availableAtomFamily(Token.JIT));
-  const setAvailableLP = useUpdateAtom(availableAtomFamily(Token.JIT_DOGE));
-  const setAvailableLP1 = useUpdateAtom(availableAtomFamily(Token.JIT_SHIB));
-  const setAvailableLP2 = useUpdateAtom(availableAtomFamily(Token.JIT_AKITA));
+  const setAvailableLP = useUpdateAtom(availableAtomFamily(Token.JIT_PEPE));
+  const setAvailableLP1 = useUpdateAtom(availableAtomFamily(Token.JIT_BOB));
+  const setAvailableLP2 = useUpdateAtom(availableAtomFamily(Token.JIT_WOJAK));
 
   // const setAvailableDeprecatedLP = useUpdateAtom(
-  //   availableAtomFamily(Token.JIT_DOGE_DEPRECATED)
+  //   availableAtomFamily(Token.JIT_PEPE_DEPRECATED)
   // );
   // const setAvailableLegacyLP = useUpdateAtom(
-  //   availableAtomFamily(Token.JIT_DOGE_LEGACY)
+  //   availableAtomFamily(Token.JIT_PEPE_LEGACY)
   // );
 
   // fetch token staking data
   // const fetchPHBStakingData = useFetchStakingData(Token.PHB);
   const fetchJITStakingData = useFetchStakingData(Token.JIT);
-  const fetchLPStakingData = useFetchStakingData(Token.JIT_DOGE);
-  const fetchLPStakingData1 = useFetchStakingData(Token.JIT_SHIB);
-  const fetchLPStakingData2 = useFetchStakingData(Token.JIT_AKITA);
+  const fetchLPStakingData = useFetchStakingData(Token.JIT_PEPE);
+  const fetchLPStakingData1 = useFetchStakingData(Token.JIT_BOB);
+  const fetchLPStakingData2 = useFetchStakingData(Token.JIT_WOJAK);
 
   // const fetchDeprecatedLPStakingData = useFetchStakingData(
-  //   Token.JIT_DOGE_DEPRECATED
+  //   Token.JIT_PEPE_DEPRECATED
   // );
-  // const fetchLegacyLPStakingData = useFetchStakingData(Token.JIT_DOGE_LEGACY);
+  // const fetchLegacyLPStakingData = useFetchStakingData(Token.JIT_PEPE_LEGACY);
 
   const fetchBalances = useCallback(async () => {
     try {

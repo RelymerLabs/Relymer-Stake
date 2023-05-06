@@ -42,10 +42,10 @@ const useStyles = makeStyles(({ palette, typography }) => ({
 
 const StyledDialog = withStyles(({ palette }) => ({
   paper: {
-    border: `2px solid #f28b03`,
+    border: `2px solid #4caf50`,
     borderRadius: 0,
-    backgroundColor: '#232028',
-    boxShadow: "0px 4px  #f28b03",
+    backgroundColor: '#204c25',
+    boxShadow: "0px 4px  #4caf50",
 
     color: '#fff',
     padding:20,
@@ -58,9 +58,9 @@ const StyledListItem = withStyles(({ palette }) => ({
     padding: 12,
     marginBottom: 24,
     borderRadius: 6,
-    background: "linear-gradient(84deg, #f28b03, #f06500)",
+    background: "linear-gradient(84deg, #4caf50, #4A7133)",
     "&:hover": {
-      background: "linear-gradient(180deg , #f06500  , #f28b03)",
+      background: "linear-gradient(180deg , #4A7133  , #4caf50)",
     },
   },
   selected: {

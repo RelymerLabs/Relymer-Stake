@@ -18,11 +18,11 @@ const StyledButton = withStyles(({ palette }) => ({
 const useStyles = makeStyles({
   rounded: {
     borderRadius: "6px",
-    background: 'linear-gradient(84deg, #f28b03, #f06500)',
+    background: 'linear-gradient(84deg, #4caf50, #4A7133)',
 
 
     "&:hover": {
-      background: 'linear-gradient(180deg , #f06500  , #f28b03)',
+      background: 'linear-gradient(180deg , #4A7133  , #4caf50)',
 
     },
   },
