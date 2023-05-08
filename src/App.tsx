@@ -8,7 +8,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Countdown from 'react-countdown';
 import ReactGA from 'react-ga';
-ReactGA.initialize('UA-193186453-1');
+ReactGA.initialize('UA-267478037-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 const COMMIT_VERSION = process.env.REACT_APP_COMMIT_VERSION;
