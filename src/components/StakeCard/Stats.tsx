@@ -54,6 +54,10 @@ export default function Stats({ token }: { token: TokenEnum }) {
       return getApy(1, 1, total, rewardsPerBlock);
     }
 
+    if (token === Token.JIT_PEPE) {
+      return getApy(1, 1, total, rewardsPerBlock);
+    }
+
     return getApy(stakeTokenPrice, JITPrice, total, rewardsPerBlock);
   }, [isRoundActive, token, stakeTokenPrice, JITPrice, total, rewardsPerBlock]);
 
@@ -71,7 +75,6 @@ export default function Stats({ token }: { token: TokenEnum }) {
           {
             Token.JIT == "PEPES" && apy
               ? `${formatNumber(apy / 365)} %`
-              // ? `465 %`
               : token == Token.JIT_PEPE
                 ? `${formatNumber(apy / 365)} %`
                 : token == Token.JIT_BOB
@@ -94,7 +97,6 @@ export default function Stats({ token }: { token: TokenEnum }) {
           {
             Token.JIT == "PEPES" && apy
               ? `${formatNumber(apy)} %`
-              // ? `110,244.30 %`
               : token == Token.JIT_PEPE
                 ? `${formatNumber(apy)} %`
                 : token == Token.JIT_BOB
