@@ -86,10 +86,10 @@ export const TOKEN_ADDRESS: {
   };
 } = {
   56: {
-    [Token.JIT]: "0xfef234c90b01b121c636e3c06e24cadca9d6404f",
-    [Token.JIT_PEPE]: "0xfef234c90b01b121c636e3c06e24cadca9d6404f",
-    [Token.JIT_BOB]: "0xfef234c90b01b121c636e3c06e24cadca9d6404f",
-    [Token.JIT_WOJAK]: "0xfef234c90b01b121c636e3c06e24cadca9d6404f",
+    [Token.JIT]: "0xE3046ECdbA719219a19C2bB2386bF23A5AAffAaa",
+    [Token.JIT_PEPE]: "0xE3046ECdbA719219a19C2bB2386bF23A5AAffAaa",
+    [Token.JIT_BOB]: "0xE3046ECdbA719219a19C2bB2386bF23A5AAffAaa",
+    [Token.JIT_WOJAK]: "0xE3046ECdbA719219a19C2bB2386bF23A5AAffAaa",
   },
   97: {
     [Token.JIT]: "0x81d22dccDA6CC1798EEe88A9928B2c8C854e9d74",
@@ -112,10 +112,10 @@ export const STAKING_CONTRACT_ADDRESS: {
   };
 } = {
   56: {
-    [Token.JIT]: "0xd4F8C272BD412d3964622Ce20Cd44f7FCe9c6AdD",
-    [Token.JIT_PEPE]: "0xd4F8C272BD412d3964622Ce20Cd44f7FCe9c6AdD",
-    [Token.JIT_BOB]: "0xd4F8C272BD412d3964622Ce20Cd44f7FCe9c6AdD",
-    [Token.JIT_WOJAK]: "0xd4F8C272BD412d3964622Ce20Cd44f7FCe9c6AdD",
+    [Token.JIT]: "0x895D4BEbD21Fed1fdCB671EAED7e75f879A26e07",
+    [Token.JIT_PEPE]: "0x895D4BEbD21Fed1fdCB671EAED7e75f879A26e07",
+    [Token.JIT_BOB]: "0x895D4BEbD21Fed1fdCB671EAED7e75f879A26e07",
+    [Token.JIT_WOJAK]: "0x895D4BEbD21Fed1fdCB671EAED7e75f879A26e07",
   },
   97: {
     [Token.JIT]: "0x0936836BfFc5fF796bD25AD126f3da79dD17dcc2",
@@ -133,7 +133,7 @@ export const STAKING_CONTRACT_ADDRESS: {
 
 // const EnvChainId = parseInt(process.env.REACT_APP_CHAIN_ID);
 
-export const ChainId = 97 ;//[56, 97].indexOf(EnvChainId) > -1 ? EnvChainId : 97;
+export const ChainId = 56 ;//[56, 97].indexOf(EnvChainId) > -1 ? EnvChainId : 97;
 export const ChainName = CHAIN_NAME_MAP[ChainId];
 export const TokenAddresses = TOKEN_ADDRESS[ChainId];
 export const StakingAddresses = STAKING_CONTRACT_ADDRESS[ChainId];
