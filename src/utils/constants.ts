@@ -12,7 +12,7 @@ export enum Action {
 export enum Token {
   // PHB = "PHB",
   JIT = "PEPES",
-  JIT_PEPE = "PEPE",
+  JIT_PEPE = "POV",
   JIT_BOB = "BOB",
   JIT_WOJAK = "WOJAK",
   // JIT_PEPE_DEPRECATED = "JIT-BNB LP Deprecated",
@@ -21,14 +21,14 @@ export enum Token {
 
 export const TokenName = {
   [Token.JIT]: "PEPES",
-  [Token.JIT_PEPE]: "PEPE",
+  [Token.JIT_PEPE]: "POV",
   [Token.JIT_BOB]: "BOB",
   [Token.JIT_WOJAK]: "WOJAK",
 };
 
 export const TokenShortName = {
   [Token.JIT]: "PEPES",
-  [Token.JIT_PEPE]: "PEPE",
+  [Token.JIT_PEPE]: "POV",
   [Token.JIT_BOB]: "BOB",
   [Token.JIT_WOJAK]: "WOJAK",
 };
@@ -113,7 +113,7 @@ export const STAKING_CONTRACT_ADDRESS: {
 } = {
   56: {
     [Token.JIT]: "0x895D4BEbD21Fed1fdCB671EAED7e75f879A26e07",
-    [Token.JIT_PEPE]: "0x895D4BEbD21Fed1fdCB671EAED7e75f879A26e07",
+    [Token.JIT_PEPE]: "0x9Dd1fB1061436E971f80Df7C69F19e64E73c8FbD",
     [Token.JIT_BOB]: "0x895D4BEbD21Fed1fdCB671EAED7e75f879A26e07",
     [Token.JIT_WOJAK]: "0x895D4BEbD21Fed1fdCB671EAED7e75f879A26e07",
   },

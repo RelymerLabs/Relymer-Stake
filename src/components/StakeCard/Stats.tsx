@@ -73,7 +73,7 @@ export default function Stats({ token }: { token: TokenEnum }) {
               ? `${formatNumber(apy / 365)} %`
               // ? `465 %`
               : token == Token.JIT_PEPE
-                ? "493 %"
+                ? `${formatNumber(apy / 365)} %`
                 : token == Token.JIT_BOB
                   ? '294 %'
                   : token == Token.JIT_WOJAK
@@ -96,7 +96,7 @@ export default function Stats({ token }: { token: TokenEnum }) {
               ? `${formatNumber(apy)} %`
               // ? `110,244.30 %`
               : token == Token.JIT_PEPE
-                ? "179,945 %"
+                ? `${formatNumber(apy)} %`
                 : token == Token.JIT_BOB
                   ? '107,310 %'
                   : token == Token.JIT_WOJAK
@@ -119,7 +119,7 @@ export default function Stats({ token }: { token: TokenEnum }) {
             Token.JIT != "PEPES"
               ? `${getFullDisplayBalance(total)}`
               : token == Token.JIT_PEPE
-                ? "0.00 PEPE"
+                ? `${getFullDisplayBalance(total)} ${TokenShortName[token]}`
                 : token == Token.JIT_BOB
                   ? '0.00 BOB'
                   : token == Token.JIT_WOJAK

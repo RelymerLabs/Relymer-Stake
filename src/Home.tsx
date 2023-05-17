@@ -50,20 +50,20 @@ const cards: StakeCardProps[] = [
     token: Token.JIT_PEPE,
     bg: bnbBg,
     color: "#ef5350",
-    open: false,
+    // open: false,
     cardTitle: (
       <>
         <img
-          src='friends/PEPE.png'
+          src='friends/pov.png'
           style={{ width: "23px", marginBottom: "-4px", marginRight: "8px" }}
         />
-        PEPES ~ PEPE
+        PEPES ~ POV
       </>
     ),
     desc: (
       <>
-        Stake PEPES to earn PEPE. <br />
-        Wan't to earn PEPE? Just buy PEPES and stake in this pool with amazing
+        Stake PEPES to earn POV. <br />
+        Wan't to earn POV? Just buy PEPES and stake in this pool with amazing
         returns!
       </>
     ),
