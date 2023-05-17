@@ -19,8 +19,9 @@ export default function Pending({
     <StyledBackdrop open {...props}>
       <Box>
         <Typography variant='h6' display='block'>
-          This pool will go live after <br />
-          Presale/Spot Trading launch<br />
+        This staking pool is not live,
+ <br />
+ stay tuned for updates.<br />
          
         </Typography>
       </Box>

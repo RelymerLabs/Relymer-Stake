@@ -50,7 +50,7 @@ const cards: StakeCardProps[] = [
     token: Token.JIT_PEPE,
     bg: bnbBg,
     color: "#ef5350",
-    // open: false,
+    open: false,
     cardTitle: (
       <>
         <img
@@ -72,7 +72,7 @@ const cards: StakeCardProps[] = [
     token: Token.JIT_BOB,
     bg: bnbBg,
     color: "#ef5350",
-    // open: false,
+    open: false,
     cardTitle: (
       <>
         <img
@@ -94,7 +94,7 @@ const cards: StakeCardProps[] = [
     token: Token.JIT_WOJAK,
     bg: bnbBg,
     color: "#ef5350",
-    // open: false,
+    open: false,
     cardTitle: (
       <>
         <img
