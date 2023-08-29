@@ -31,83 +31,83 @@ const cards: StakeCardProps[] = [
     cardTitle: (
       <>
         <img
-          src='friends/logo.png'
+          src='https://relymer.com/assets/Logo.svg'
           alt=''
-          style={{ width: "23px", marginBottom: "-4px", marginRight: "8px" }}
+          style={{ width: "28px", marginBottom: "-4px", marginRight: "8px" }}
         />
-        PEPES ~ PEPES
+        REL ~ REL
       </>
     ),
     desc: (
       <>
-        Stake PEPES to earn PEPES. <br />
-        Simplest way to get more PEPES with amazing returns is to just stake
+        Stake REL to earn REL. <br />
+        Simplest way to get more REL with amazing returns is to just stake
         them in this pool!
       </>
     ),
   },
   {
-    token: Token.JIT_PEPE,
+    token: Token.JIT_BNB,
     bg: bnbBg,
     color: "#ef5350",
     // open: false,
     cardTitle: (
       <>
         <img
-          src='friends/pov.png'
+          src='/bnb.png'
           style={{ width: "23px", marginBottom: "-4px", marginRight: "8px" }}
         />
-        PEPES ~ POV
+        REL ~ BNB
       </>
     ),
     desc: (
       <>
-        Stake PEPES to earn POV. <br />
-        Wan't to earn POV? Just buy PEPES and stake in this pool with amazing
+        Stake REL to earn BNB. <br />
+        Wan't to earn BNB? Just buy REL and stake in this pool with amazing
         returns!
       </>
     ),
   },
   {
-    token: Token.JIT_BOB,
+    token: Token.JIT_BUSD,
     bg: bnbBg,
     color: "#ef5350",
-    open: false,
+    // open: false,
     cardTitle: (
       <>
         <img
-          src='friends/BOB.png'
+          src='friends/busd.png'
           style={{ width: "23px", marginBottom: "-4px", marginRight: "8px" }}
         />
-        PEPES ~ BOB
+        REL ~ BUSD
       </>
     ),
     desc: (
       <>
-        Stake PEPES to earn BOB. <br />
-        Wan't to earn BOB? Just buy PEPES and stake in this pool with amazing
+        Stake REL to earn BUSD. <br />
+        Wan't to earn BUSD? Just buy REL and stake in this pool with amazing
         returns!
       </>
     ),
   },
   {
-    token: Token.JIT_WOJAK,
+    token: Token.JIT_DOGE,
     bg: bnbBg,
     color: "#ef5350",
-    open: false,
+    // open: false,
     cardTitle: (
       <>
         <img
-          src='friends/WOJAK.png'
+          src='friends/doge.png'
           style={{ width: "23px", marginBottom: "-4px", marginRight: "8px" }}
         />
-        PEPES ~ WOJAK
+        REL ~ DOGE
       </>
     ),
     desc: (
       <>
-        Stake PEPES to earn WOJAK. <br />
-        Wan't to earn WOJAK? Just buy PEPES and stake in this pool with amazing
+        Stake REL to earn DOGE. <br />
+        Wan't to earn DOGE? Just buy REL and stake in this pool with amazing
         returns!
       </>
     ),

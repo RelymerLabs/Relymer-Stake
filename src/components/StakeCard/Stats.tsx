@@ -1,3 +1,5 @@
+/** @format */
+
 import { Box, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { useAtomValue } from "jotai/utils";
@@ -12,7 +14,7 @@ import { tokenPriceAtomFamily } from "@/atoms/price";
 const useStyles = makeStyles({
   root: {
     padding: cardContent.padding,
-    color: "#fff"
+    color: "#fff",
   },
   item: {
     padding: "4px 0",
@@ -23,8 +25,8 @@ const useStyles = makeStyles({
   label: {
     fontSize: 14,
     color: "#ddf1b5",
-    fontFamily:"Architects Daughter",
-    fontWeight: 600
+    fontFamily: "Architects Daughter",
+    fontWeight: 600,
   },
   apy: {
     fontSize: 14,
@@ -41,7 +43,7 @@ export default function Stats({ token }: { token: TokenEnum }) {
   const JITPrice = useAtomValue(tokenPriceAtomFamily(Token.JIT));
   const stakeTokenPrice = useAtomValue(tokenPriceAtomFamily(token));
   const { total, rewardsPerBlock, isRoundActive } = useAtomValue(
-    tokenStatAtomFamily(token)
+    tokenStatAtomFamily(token),
   );
 
   const apy = useMemo(() => {
@@ -54,7 +56,7 @@ export default function Stats({ token }: { token: TokenEnum }) {
       return getApy(1, 1, total, rewardsPerBlock);
     }
 
-    if (token === Token.JIT_PEPE) {
+    if (token === Token.JIT_BNB) {
       return getApy(1, 1, total, rewardsPerBlock);
     }
 
@@ -67,68 +69,59 @@ export default function Stats({ token }: { token: TokenEnum }) {
         <Typography
           variant='body1'
           color='primary'
-          classes={{ root: classes.label }}
-        >
+          classes={{ root: classes.label }}>
           DPR:
         </Typography>
         <Typography variant='body1' classes={{ root: classes.apy }}>
-          {
-            Token.JIT == "PEPES" && apy
-              ? `${formatNumber(apy / 365)} %`
-              : token == Token.JIT_PEPE
-                ? `${formatNumber(apy / 365)} %`
-                : token == Token.JIT_BOB
-                  ? '294 %'
-                  : token == Token.JIT_WOJAK
-                    ? '432 %'
-                    : '465 %'
-          }
+          {Token.JIT == "REL" && apy
+            ? `${formatNumber(apy / 365)} %`
+            : token == Token.JIT_BNB
+            ? `493 %`
+            : token == Token.JIT_BUSD
+            ? "294 %"
+            : token == Token.JIT_DOGE
+            ? "432 %"
+            : "465 %"}
         </Typography>
       </div>
       <div className={classes.item}>
         <Typography
           variant='body1'
           color='primary'
-          classes={{ root: classes.label }}
-        >
+          classes={{ root: classes.label }}>
           APR:
         </Typography>
         <Typography variant='body1' classes={{ root: classes.apy }}>
-          {
-            Token.JIT == "PEPES" && apy
-              ? `${formatNumber(apy)} %`
-              : token == Token.JIT_PEPE
-                ? `${formatNumber(apy)} %`
-                : token == Token.JIT_BOB
-                  ? '107,310 %'
-                  : token == Token.JIT_WOJAK
-                    ? '157,680 %'
-                    : '110,244.30 %'
-          }
+          {Token.JIT == "REL" && apy
+            ? `${formatNumber(apy)} %`
+            : token == Token.JIT_BNB
+            ? `179,945 %`
+            : token == Token.JIT_BUSD
+            ? "107,310 %"
+            : token == Token.JIT_DOGE
+            ? "157,680 %"
+            : "110,244.30 %"}
         </Typography>
       </div>
       <div className={classes.item}>
         <Typography
           variant='body1'
           color='primary'
-          classes={{ root: classes.label }}
-        >
+          classes={{ root: classes.label }}>
           Staked:
         </Typography>
         <Typography variant='body1' classes={{ root: classes.total }}>
           {/* {`${getFullDisplayBalance(total)}`} */}
-          {
-            Token.JIT != "PEPES"
-              ? `${getFullDisplayBalance(total)}`
-              : token == Token.JIT_PEPE
-                ? `${getFullDisplayBalance(total)} ${TokenShortName[token]}`
-                : token == Token.JIT_BOB
-                  ? '0.00 BOB'
-                  : token == Token.JIT_WOJAK
-                    ? '0.00 WOJAK'
-                  // : '-'
-            : `${getFullDisplayBalance(total)} ${TokenShortName[token]}`
-          }
+          {Token.JIT != "REL"
+            ? `${getFullDisplayBalance(total)}`
+            : token == Token.JIT_BNB
+            ? `${getFullDisplayBalance(total)} ${TokenShortName[token]}`
+            : token == Token.JIT_BUSD
+            ? `${getFullDisplayBalance(total)} ${TokenShortName[token]}`
+            : token == Token.JIT_DOGE
+            ? `${getFullDisplayBalance(total)} ${TokenShortName[token]}`
+            : // : '-'
+              `${getFullDisplayBalance(total)} ${TokenShortName[token]}`}
         </Typography>
       </div>
     </Box>

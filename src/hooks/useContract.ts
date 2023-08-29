@@ -54,7 +54,7 @@ export const useJIT = (writable: boolean = false) => {
 
 export const useLP = (writable: boolean = false) => {
   return useContract(
-    TokenAddresses[Token.JIT_PEPE],
+    TokenAddresses[Token.JIT_BNB],
     erc20Abi,
     writable
   ) as Erc20;
@@ -62,7 +62,7 @@ export const useLP = (writable: boolean = false) => {
 
 export const usePswapBnbLP = (writable: boolean = false) => {
   return useContract(
-    TokenAddresses[Token.JIT_BOB],
+    TokenAddresses[Token.JIT_BUSD],
     erc20Abi,
     writable
   ) as Erc20;
@@ -71,7 +71,7 @@ export const usePswapBnbLP = (writable: boolean = false) => {
 
 export const usePswapBusdPL = (writable: boolean = false) => {
   return useContract(
-    TokenAddresses[Token.JIT_WOJAK],
+    TokenAddresses[Token.JIT_DOGE],
     erc20Abi,
     writable
   ) as Erc20;
@@ -79,7 +79,7 @@ export const usePswapBusdPL = (writable: boolean = false) => {
 
 // export const useLegacyLP = (writable: boolean = false) => {
 //   return useContract(
-//     TokenAddresses[Token.JIT_PEPE_LEGACY],
+//     TokenAddresses[Token.JIT_BNB_LEGACY],
 //     erc20Abi,
 //     writable
 //   ) as Erc20;

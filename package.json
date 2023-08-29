@@ -1,5 +1,5 @@
 {
-  "name": "pepeswap-staker",
+  "name": "relymer-staker",
   "version": "0.1.0",
   "dependencies": {
     "@ahooksjs/use-request": "^2.8.5",

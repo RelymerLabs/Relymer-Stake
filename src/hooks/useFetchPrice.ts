@@ -15,22 +15,22 @@ export default function useFetchPrice() {
   const [timestamp, setTimestamp] = useState<number>(0);
 
   const lpToken = useRpcContract(
-    TokenAddresses[Token.JIT_PEPE],
+    TokenAddresses[Token.JIT_BNB],
     erc20Abi
   ) as Erc20;
   const lpToken1 = useRpcContract(
-    TokenAddresses[Token.JIT_BOB],
+    TokenAddresses[Token.JIT_BUSD],
     erc20Abi
   ) as Erc20;
   const lpToken2 = useRpcContract(
-    TokenAddresses[Token.JIT_WOJAK],
+    TokenAddresses[Token.JIT_DOGE],
     erc20Abi
   ) as Erc20;
 
   const setJITPrice = useUpdateAtom(tokenPriceAtomFamily(Token.JIT));
-  const setLpPrice = useUpdateAtom(tokenPriceAtomFamily(Token.JIT_PEPE));
-  const setLpPrice1 = useUpdateAtom(tokenPriceAtomFamily(Token.JIT_BOB));
-  const setLpPrice2 = useUpdateAtom(tokenPriceAtomFamily(Token.JIT_WOJAK));
+  const setLpPrice = useUpdateAtom(tokenPriceAtomFamily(Token.JIT_BNB));
+  const setLpPrice1 = useUpdateAtom(tokenPriceAtomFamily(Token.JIT_BUSD));
+  const setLpPrice2 = useUpdateAtom(tokenPriceAtomFamily(Token.JIT_DOGE));
 
   const run = useCallback(async () => {
     const now = Date.now() / 1000;

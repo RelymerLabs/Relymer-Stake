@@ -81,7 +81,7 @@ export default function Earned({ token }: Props) {
         const res = await tx.wait(1);
         console.log("Harvest:", res);
         enqueueSnackbar(
-          `Successfully harvested ${getFullDisplayBalance(earned)} PEPES`,
+          `Successfully harvested ${getFullDisplayBalance(earned)} REL`,
           { variant: "success" }
         );
         refresh();

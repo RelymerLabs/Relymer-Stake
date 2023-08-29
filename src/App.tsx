@@ -13,9 +13,9 @@ import { Nav, OverlayTrigger, Tab, Tooltip } from "react-bootstrap";
 
 import ReactDOM from "react-dom";
 import Countdown from "react-countdown";
-import ReactGA from "react-ga";
-ReactGA.initialize("UA-267478037-1");
-ReactGA.pageview(window.location.pathname + window.location.search);
+// import ReactGA from "react-ga";
+// ReactGA.initialize("UA-267478037-1");
+// ReactGA.pageview(window.location.pathname + window.location.search);
 
 const COMMIT_VERSION = process.env.REACT_APP_COMMIT_VERSION;
 
@@ -40,8 +40,10 @@ function App() {
   return (
     <>
       <div className='App'>
-        {/* <Header /> */}
-        <Tab.Container
+        <Header />
+        <Home />
+
+        {/* <Tab.Container
           id='left-tabs-example'
           // className='m-auto'
           defaultActiveKey='Binance'>
@@ -73,17 +75,16 @@ function App() {
 
           <Tab.Content>
             <Tab.Pane eventKey='Binance'>
-              <Home />
             </Tab.Pane>
             <Tab.Pane eventKey='ETHEREUM'>
               <iframe
                 title='stake'
-                src='https://pepeswap-eth-stake.netlify.app'
+                src=''
                 width='100%'
                 height='590px'></iframe>
             </Tab.Pane>
           </Tab.Content>
-        </Tab.Container>
+        </Tab.Container> */}
         {/* {COMMIT_VERSION ? (
           <Version variant='caption'>Version: {COMMIT_VERSION}</Version>
         ) : null} */}

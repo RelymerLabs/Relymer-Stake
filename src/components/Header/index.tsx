@@ -1,74 +1,101 @@
+/** @format */
+
+import { useEffect } from "react";
 import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import ConnectButton from "@components/ConnectButton";
 import logo from "@assets/logo.png";
 import useWallet from "@hooks/useWallet";
 import WalletInfo from "./WalletInfo";
-import WalletIndicator from "./WalletIndicator";
+import ReactGA from "react-ga";
+// import WalletIndicator from "./WalletIndicator";
 
 const useStyles = makeStyles({
   container: {
     position: "relative",
-    padding: "36px 0",
-    borderBottom: "1px solid #11263B",
-    backgroundColor: '#f1ed10',
-    boxShadow: '-15px 10px #18ffff',
+    padding: "20px 60px",
+    backgroundColor: "transparent",
+    boxShadow: "0 0 10px rgb(99 99 98 / 20%)",
   },
   logo: {
-    width: 40,
-    color:"#fff"
+    marginBottom: 8,
+    fontFamily: "Lemon",
+    letterSpacing: "3px",
+    textTransform: "uppercase",
+    color: "#fff",
   },
   connect: {
-    position: "absolute",
-    right: 24,
-    top: 38,
-    fontSize: 14,
-    paddingLeft: 18,
-    paddingRight: 18,
-    borderRadius: "6px",
-    background: '#6c757d',
-    color:"#fff",
-    boxShadow: "-5px 5px #18ffff",
+    position: "relative",
+    height: "40px",
+    right: 10,
+    top: 8,
+    fontSize: "17px",
+    letterSpacing: 0,
+    lineHeight: "25px",
+    color: "#fff",
+    background: "linear-gradient(84deg, #4caf50, #4A7133)",
+    padding: "0 26px",
+    borderRadius: "5px",
+    fontWeight: 400,
+    display: "inline-block",
     "&:hover": {
-      background: '#ef5350',
+      background: 'linear-gradient(180deg , #4A7133  , #4caf50)',
     },
   },
   walletInfo: {
-    position: "absolute",
-    right: 24,
-    top: 12,
+    position: "relative",
+    padding: "0px 26px",
+    right: 10,
+    top: -10,
   },
   walletIndicator: {
     position: "absolute",
     bottom: -16,
     "&:hover": {
-      background: '#424242 !important',
+      background: "#424242 !important",
     },
     "&:focus": {
-      background: '#424242 !important',
+      background: "#424242 !important",
     },
   },
-  title:{
-    padding:30,
-    fontSize:22,
-    color:"#000"
-  }
+  navbar: {
+    color: "#000",
+    margin: "14px auto",
+    "& a": {
+      textDecoration: "none",
+      color: "#4f5b6d",
+    },
+    "& li": {
+      // marginTop: "20px",
+      display: "inline",
+      paddingRight: "10px",
+      fontSize: "16px",
+      letterSpacing: "0px",
+      lineHeight: "24px",
+      padding: "5px 10px",
+      color: "#4f5b6d",
+    },
+  },
 });
 
 export default function Header() {
   const classes = useStyles();
   const { connected } = useWallet();
 
+  useEffect(() => {
+    ReactGA.initialize("UA-269597103-1");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
-    <Grid container justify='center' classes={{ container: classes.container }}>
-      <a href="#" target="_BLANK">
-        <img src={logo} alt='pepeswap' className={classes.logo} /> 
-      </a>
-      <strong className={classes.title}>pepeswap</strong>
+    <Grid container classes={{ container: classes.container }}>
+      {/* <img src={logo} alt='' className={classes.logo} /> */}
+      <h1 className={classes.logo}>Relymer Stake</h1>
+      <ul className={classes.navbar}></ul>
       {connected ? (
         <>
           <WalletInfo className={classes.walletInfo} />
-          <WalletIndicator classes={{ root: classes.walletIndicator }} />
+          {/* <WalletIndicator classes={{ root: classes.walletIndicator }} /> */}
         </>
       ) : (
         <ConnectButton classes={{ root: classes.connect }} />
